@@ -1,0 +1,16 @@
+TARGET = calc-tor120transf
+CHILD  = tortrans
+LIB    = charint
+CC     = @CXX@
+$(TARGET): $(LIB).h $(LIB).cpp $(CHILD).h $(CHILD).cpp main.cpp
+	$(CC) -o $(TARGET) $(LIB).h $(LIB).cpp $(CHILD).h $(CHILD).cpp main.cpp
+
+install: $(TARGET)
+	mv $(TARGET) /usr/local/bin/
+
+uninstall: $(TARGET)
+	rm lampout1trans /usr/local/bin/$(TARGET)
+
+clear:
+	rm *.o
+

@@ -7,9 +7,9 @@
  ************************************* */
 #include <stdio.h>
 #include <math.h>
-#include "tortrans.cpp"
+#include "tortrans.h"
 #include <iostream>
-#include "charint.cpp"
+#include "charint.h"
 #include <string.h>
 int main(int argc, char *argv[])
 {
